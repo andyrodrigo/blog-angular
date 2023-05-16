@@ -1,26 +1,18 @@
 <div class="container__small-card">
   <div class="small-card-content">
     <div class="small-card__photo">
-      <img
-        src="https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png"
-        alt="card image"
-      />
+      <img [src]="photoCover" alt="card image" />
     </div>
     <div class="small-card-text">
       <div class="small-card__title">
-        <a
-          href="https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png"
-          ><h1>Saiu a nova versão o Angular</h1></a
+        <a [routerLink]="['content', id]"
+          ><h1>{{ cardTitle }}</h1></a
         >
       </div>
       <div class="small-card__description">
-        <a
-          href="https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png"
-        >
+        <a [routerLink]="['content', id]">
           <p>
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            {{ cardDescription }}
           </p></a
         >
       </div>

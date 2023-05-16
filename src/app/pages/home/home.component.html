@@ -1,17 +1,28 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
 <app-menu-title></app-menu-title>
 
 <article class="container__articles">
   <section class="articles__main">
-    <app-big-card></app-big-card>
+    <app-big-card
+      id="1"
+      photoCover="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bill_Gates_2018.jpg/640px-Bill_Gates_2018.jpg"
+      cardTitle="Bill Gates anuncia IA da Microsoft"
+    ></app-big-card>
   </section>
   <section class="articles__others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card
+      id="2"
+      photoCover="https://i.ytimg.com/vi/3Fdgj08QGI4/maxresdefault.jpg"
+      cardTitle="Nova novela Indiana"
+    ></app-small-card>
+    <app-small-card
+      id="3"
+      photoCover="https://thumbs.jusbr.com/imgs.jusbr.com/publications/artigos/214720483/images/organizado1468442333.jpg"
+      cardTitle="Governo nega associação com o crime organizado"
+    ></app-small-card>
+    <app-small-card
+      id="4"
+      photoCover="https://www.viajanet.com.br/blog/wp-content/uploads/2018/08/Primeira-viagem-de-aviao.jpg"
+      cardTitle="Viajar ficou mais barato"
+    ></app-small-card>
   </section>
 </article>
-
-<router-outlet></router-outlet>
